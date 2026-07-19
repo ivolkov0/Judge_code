@@ -1,0 +1,10 @@
+[flake8]
+max-line-length = 120
+# Intentional project style: aligned assignments / dict literals for readability.
+extend-ignore = E203, W503, E221, E241, E272
+exclude = .venv, venv, __pycache__, .git
+per-file-ignores =
+    # seed.py is a data file: late imports (sys.path bootstrap) and long demo rows.
+    seed.py: E402, E501, E302, E305, E303, E231
+    # conftest configures env before importing the app on purpose.
+    tests/conftest.py: E402

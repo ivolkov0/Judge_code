@@ -1,0 +1,7 @@
+# Корневой манифест зависимостей проекта JUDGE.
+#
+# Backend (Python 3.12) — полный список в backend/requirements.txt:
+-r backend/requirements.txt
+#
+# Frontend (Node.js / React) — зависимости описаны в frontend/package.json,
+# устанавливаются через `npm install` внутри каталога frontend/.
